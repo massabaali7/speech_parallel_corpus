@@ -19,17 +19,16 @@ pip install SpeechRecognition
 pip install googletrans==4.0.0-rc1 
 pip install textblob-ar-mk
 
-# choose wiki word vectors from the following website: https://fasttext.cc/docs/en/pretrained-vectors.html based on the target language in our case here Arabic
+# Download wiki word vectors
+
+- Choose wiki word vectors from the following website: https://fasttext.cc/docs/en/pretrained-vectors.html based on the target language in our case here Arabic
 https://dl.fbaipublicfiles.com/fasttext/vectors-wiki/wiki.ar.zip
-
-# Upload two videos for the same episode (in two different languages)
-Run the video matching algorithm 
-
-# Run the VAD (Voice Activity Detection) to create csv files for both episodes 
-python run_speech_segment.py "ep1TR.wav" "ep1AR.wav"
-
-# Run the automatic matching algorithm
-# Add the following attributes in order Path, Dubbed file, Org file, langSrc, langTrgt 
-python run_segment_automatic_match.py "/content/gdrive/MyDrive/parallel_corpus/samples/" "ep1AR" "ep1TR" "tr" "ar"
+- Upload two videos for the same episode (in two different languages)
+    Run the video matching algorithm 
+- Run the VAD (Voice Activity Detection) to create csv files for both episodes 
+    python run_speech_segment.py "ep1TR.wav" "ep1AR.wav"
+- Run the automatic matching algorithm
+  Add the following attributes in order Path, Dubbed file, Org file, langSrc, langTrgt 
+  python run_segment_automatic_match.py "/content/gdrive/MyDrive/parallel_corpus/samples/" "ep1AR" "ep1TR" "tr" "ar"
 
 To see the matched segments check the result.csv file 
