@@ -4,7 +4,7 @@ Creating Speech-to-Speech Corpus From Dubbed Series
 Dubbed series are gaining a lot of popularity in recent years with strong support from major media service providers. Such popularity is fueled by studies that showed that dubbed versions of TV shows are more popular than their subtitled equivalents. We propose an unsupervised approach to construct speech-to-speech corpus, aligned on short segment levels, to produce a parallel speech corpus in the source- and target- languages. Our methodology exploits video frames, speech recognition, machine translation, and
 noisy frames removal algorithms to match segments in both languages. 
 
-- Paper: ##
+- Paper: https://arxiv.org/abs/2203.03601
 - Demo: https://colab.research.google.com/drive/1dAcxBRiJ_fC5VrZ4LySUkiwLTXNcAjSu?usp=sharing
 - Dataset: 
   - Series 1: https://mailaub-my.sharepoint.com/:u:/g/personal/mab87_mail_aub_edu/EdD4PEjBYb5Khc3hHDhns6kBN32ZvS1OnXztLohWlyT94w?e=LUvdUC
